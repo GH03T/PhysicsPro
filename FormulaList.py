@@ -17,3 +17,7 @@ def PotentialEnergy(mass, height):
 def KineticEnergy(mass, velocity):
     return(1/2 * mass * math.pow(velocity, 2))
 
+#Others, but still fun!
+def MaxSpeedCurve(frictionCo, radius):
+    return math.sqrt(frictionCo * gravity * radius)
+
