@@ -7,6 +7,7 @@ while(Continue == True):
     print("Option 1: Potential/Kinetic Energy")
     print("Option 2: Calculate Work Done")
     print("Option 3: Calculate Max Turn Speed")
+    print("Option 4: Calculate Force of Gravity")
     print("Or, Press 'Q' to Quit.")
     selection = str(input("Select Option: "))
 
@@ -57,6 +58,19 @@ while(Continue == True):
         #Print Calculation To CLI:
         print("Max Turn Speed = " + str(MaxTurnSpeedCalc) + " m/s")
         print("Max Turn Speed = " + str(MaxTurnSpeedCalcMPH) + " Mi/h")
+    
+    #Force of Gravity
+    if(selection == "4"):
+        #Variables:
+        print()
+        mass = float(input("Enter Mass: "))
+        print()
+
+        #Calculations:
+        ForceGravityCalc = float(ForceGravity(mass))
+
+        #Print Calculations To CLI:
+        print("Force of Gravity = " + str(ForceGravityCalc) + " Newtons")
 
     #Quit
     if(selection == "Q" or selection == "q"):
