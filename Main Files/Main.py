@@ -10,7 +10,7 @@ while(Continue == True):
     print("Option 4: Calculate Force of Gravity")
     print("Or, Press 'Q' to Quit.")
     selection = str(input("Select Option: "))
-
+    
     #Potential/Kinetic Energy
     if(selection == "1"):
         #Variables:
@@ -29,7 +29,7 @@ while(Continue == True):
         print("Kinetic Energy = " + str(KineticEnergyCalc) + " Joules")
 
     #Calculate Work Done
-    if(selection == "2"):
+    elif(selection == "2"):
         #Variables
         print()
         force = float(input("Enter Force: "))
@@ -44,7 +44,7 @@ while(Continue == True):
         print("Work = " + str(WorkCalc) + " Joules")
 
     #Calculate Max Turn Speed
-    if(selection == "3"):
+    elif(selection == "3"):
         #Variables:
         print()
         frictionCo = float(input("Enter Coefficent of Friction: "))
@@ -60,7 +60,7 @@ while(Continue == True):
         print("Max Turn Speed = " + str(MaxTurnSpeedCalcMPH) + " Mi/h")
     
     #Force of Gravity
-    if(selection == "4"):
+    elif(selection == "4"):
         #Variables:
         print()
         mass = float(input("Enter Mass: "))
@@ -73,14 +73,13 @@ while(Continue == True):
         print("Force of Gravity = " + str(ForceGravityCalc) + " Newtons")
 
     #Quit
-    if(selection == "Q" or selection == "q"):
+    elif(selection == "Q" or selection == "q"):
         Continue = False
         break
     
     #Error #1
     else:
         print("\nError #1: Unrecognized number selected. Please select recognized number.")
-        
     
     #Space
     print()
