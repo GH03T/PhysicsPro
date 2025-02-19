@@ -1,10 +1,12 @@
 from FormulaList import *
+from Settings import *
 import time
 
-#Delay Times - In Seconds
-shortDelay = 0.025 # Default = 0.025
-regDelay = 0.25 # Default is 0.25
-longDelay = 0.75 # Default is 0.75
+# Enable Delay:
+if(enableDelay == False):
+    shortDelay = 0
+    regDelay = 0
+    longDelay = 0
 
 # Loop:
 Continue = True
