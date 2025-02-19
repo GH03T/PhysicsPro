@@ -2,7 +2,7 @@ import math
 
 gravity = 9.8
 
-def momentum(mass, velocity):
+def Momentum(mass, velocity):
     return mass * velocity
 
 def Work(force, displacement, angle):
