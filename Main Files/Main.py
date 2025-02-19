@@ -76,6 +76,12 @@ while(Continue == True):
     if(selection == "Q" or selection == "q"):
         Continue = False
         break
-
+    
+    #Error #1
+    else:
+        print("\nError #1: Unrecognized number selected. Please select recognized number.")
+        
+    
     #Space
     print()
+

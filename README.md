@@ -15,7 +15,7 @@ PhysicsPro was built using Python 3.13.2. If you have a version of Python 2, Phy
 The easiest way to install the latest version of Python 3 is to download it from Python.org, Pythons official website.
 
 # How to Run PhysicsPro:
-The easiest way to run PhysicsPro is to right click "Main.py" in your files app and select open with "Python Launcher".
+The easiest way to run PhysicsPro is to right click "Main.py" or the "Physics Pro" script in your files app and select open with "Python Launcher" or "terminal".
 1) Navigate to PhysicsPro directory
 2) Right click "Main.py"
 3) Select "Open With" > "Python Launcher"
@@ -27,3 +27,8 @@ You may also run PhysicsPro using your computer's terminal. To do this, do the f
 
 If you have Visual Studio, or VSCode installed, you may also open the PhysicsPro directory in your workspace and run, "Main.py".
 
+# Error Codes and What They Mean:
+PhysicsPro comes built in with numerous error codes. They all mean differnt things. These are what all the error codes mean.
+
+- Error #1: Unrecognized number selected. Please select recognized number.
+This error code is caused by typing in the wrong number into the options menu. To fix this, when the loop repeats, just simply enter one of the listed option numbers.
