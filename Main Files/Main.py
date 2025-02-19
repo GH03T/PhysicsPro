@@ -85,9 +85,8 @@ while(Continue == True):
         MomentumCalc = float(Momentum(mass, velocity))
 
         #Print Calculations To CLI:
-        print("Momentum = " + MomentumCalc + " Newton-meters")
-
-
+        print("Momentum = " + str(MomentumCalc) + " Kg * m/s")
+    
     #Quit
     elif(selection == "Q" or selection == "q"):
         Continue = False
