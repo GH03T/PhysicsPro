@@ -21,3 +21,4 @@ def KineticEnergy(mass, velocity):
 def MaxSpeedCurve(frictionCo, radius):
     return math.sqrt(frictionCo * gravity * radius)
 
+#Conversions

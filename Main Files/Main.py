@@ -1,16 +1,31 @@
 from FormulaList import *
+import time
 
-#Loop:
+#Delay Times - In Seconds
+shortDelay = 0.025 # Default = 0.025
+regDelay = 0.25 # Default is 0.25
+longDelay = 0.75 # Default is 0.75
+
+# Loop:
 Continue = True
 while(Continue == True):
-    #Menu:
+    # Menu:
     print("Option 1: Potential/Kinetic Energy")
+    time.sleep(shortDelay)
     print("Option 2: Calculate Work Done")
+    time.sleep(shortDelay)
     print("Option 3: Calculate Max Turn Speed")
+    time.sleep(shortDelay)
     print("Option 4: Calculate Force of Gravity")
+    time.sleep(shortDelay)
     print("Option 5: Calculate Momentum")
+    time.sleep(shortDelay)
     print("Or, Press 'Q' to Quit.")
+    time.sleep(shortDelay)
     selection = str(input("Select Option: "))
+
+    #Delay - Enter Custom Delay in Seconds (Default: 0.25)
+    time.sleep(regDelay)
     
     #Potential/Kinetic Energy
     if(selection == "1"):
@@ -20,6 +35,9 @@ while(Continue == True):
         velocity = float(input("Enter Velocity: "))
         height = float(input("Enter Height: "))
         print()
+
+        #Delay:
+        time.sleep(regDelay)
 
         #Calculations:
         PotentialEnergyCalc = float(PotentialEnergy(mass, height))
@@ -38,6 +56,9 @@ while(Continue == True):
         angle = float(input("Enter Angle: "))
         print()
 
+        #Delay:
+        time.sleep(regDelay)
+
         #Calculation:
         WorkCalc = float(Work(force, displacement, angle))
 
@@ -51,6 +72,9 @@ while(Continue == True):
         frictionCo = float(input("Enter Coefficent of Friction: "))
         radius = float(input("Enter Radius: "))
         print()
+
+        #Delay:
+        time.sleep(regDelay)
 
         #Calculation:
         MaxTurnSpeedCalc = float(MaxSpeedCurve(frictionCo, radius))
@@ -67,6 +91,9 @@ while(Continue == True):
         mass = float(input("Enter Mass: "))
         print()
 
+        #Delay:
+        time.sleep(regDelay)
+
         #Calculations:
         ForceGravityCalc = float(ForceGravity(mass))
 
@@ -81,12 +108,21 @@ while(Continue == True):
         velocity = float(input("Enter Velocity: "))
         print()
 
+        #Delay:
+        time.sleep(regDelay)
+
         #Calculations:
         MomentumCalc = float(Momentum(mass, velocity))
 
         #Print Calculations To CLI:
         print("Momentum = " + str(MomentumCalc) + " Kg * m/s")
     
+    #Easter Egg
+    elif(selection.lower() == "quit"):
+        print("Congrats! You have quit the program!")
+        Continue = False
+        break
+
     #Quit
     elif(selection == "Q" or selection == "q"):
         Continue = False
@@ -98,4 +134,7 @@ while(Continue == True):
     
     #Space
     print()
+
+    #End of Loop Delay
+    time.sleep(longDelay)
 
